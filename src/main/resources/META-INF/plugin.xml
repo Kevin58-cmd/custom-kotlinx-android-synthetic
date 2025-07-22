@@ -1,8 +1,8 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.kevin58cmd.customkotlinxandroidsynthetic</id>
-    <name>custom-kotlinx-android-synthetic</name>
-    <vendor>kevin58-cmd</vendor>
+    <name>AndroidSyntheticKSP</name>
+    <vendor>kevin</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
@@ -10,6 +10,6 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.github.kevin58cmd.customkotlinxandroidsynthetic.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.kevin58cmd.customkotlinxandroidsynthetic.startup.MyProjectActivity" />
+        <postStartupActivity implementation="com.github.kevin58cmd.customkotlinxandroidsynthetic.startup.SyntheticStartupActivity" />
     </extensions>
 </idea-plugin>
